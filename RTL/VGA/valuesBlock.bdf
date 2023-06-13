@@ -1,0 +1,2666 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -2216 160 -2048 176)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -2208 184 -2040 200)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "resetN" (rect 5 0 35 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -2224 208 -2056 224)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "startOfFrame" (rect 5 0 68 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -2232 40 -2064 56)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "pixelX[10..0]" (rect 5 0 65 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -2240 72 -2072 88)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "pixelY[10..0]" (rect 5 0 64 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -2232 8 -2064 24)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "onesec" (rect 5 0 38 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -2232 232 -2056 248)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "playerspeed[3..0]" (rect 5 0 87 17)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -2232 264 -2064 280)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "collision" (rect 5 0 43 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -2240 304 -2072 320)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "fuelTank" (rect 5 0 47 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 120 416 296 432)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "valuesrequest" (rect 90 0 157 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 120 432 296 448)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "valuesRGB[7..0]" (rect 90 0 166 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -1472 336 -1296 352)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "fuel_zero" (rect 90 0 134 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -1472 352 -1296 368)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "win" (rect 90 0 105 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect -208 392 24 1048)
+	(text "NumbersBitMap" (rect 5 0 82 12)(font "Arial" ))
+	(text "inst" (rect 8 640 25 652)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "offsetX1[10..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "offsetX1[10..0]" (rect 21 59 95 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "offsetY1[10..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "offsetY1[10..0]" (rect 21 75 97 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "offsetX2[10..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "offsetX2[10..0]" (rect 21 91 95 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "offsetY2[10..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "offsetY2[10..0]" (rect 21 107 97 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "offsetX3[10..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "offsetX3[10..0]" (rect 21 123 95 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "offsetY3[10..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "offsetY3[10..0]" (rect 21 139 97 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "offsetX4[10..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "offsetX4[10..0]" (rect 21 155 95 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "offsetY4[10..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "offsetY4[10..0]" (rect 21 171 97 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "offsetX5[10..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "offsetX5[10..0]" (rect 21 187 95 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "offsetY5[10..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "offsetY5[10..0]" (rect 21 203 97 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "offsetX6[10..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "offsetX6[10..0]" (rect 21 219 95 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "offsetY6[10..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "offsetY6[10..0]" (rect 21 235 97 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "offsetX7[10..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "offsetX7[10..0]" (rect 21 251 95 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "offsetY7[10..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "offsetY7[10..0]" (rect 21 267 97 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "offsetX8[10..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "offsetX8[10..0]" (rect 21 283 95 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "offsetY8[10..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "offsetY8[10..0]" (rect 21 299 97 311)(font "Arial" ))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "offsetX9[10..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "offsetX9[10..0]" (rect 21 315 95 327)(font "Arial" ))
+		(line (pt 0 320)(pt 16 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "offsetY9[10..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "offsetY9[10..0]" (rect 21 331 97 343)(font "Arial" ))
+		(line (pt 0 336)(pt 16 336)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "InsideRectangle1" (rect 0 0 84 12)(font "Arial" ))
+		(text "InsideRectangle1" (rect 21 347 105 359)(font "Arial" ))
+		(line (pt 0 352)(pt 16 352))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "InsideRectangle2" (rect 0 0 84 12)(font "Arial" ))
+		(text "InsideRectangle2" (rect 21 363 105 375)(font "Arial" ))
+		(line (pt 0 368)(pt 16 368))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "InsideRectangle3" (rect 0 0 84 12)(font "Arial" ))
+		(text "InsideRectangle3" (rect 21 379 105 391)(font "Arial" ))
+		(line (pt 0 384)(pt 16 384))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "InsideRectangle4" (rect 0 0 84 12)(font "Arial" ))
+		(text "InsideRectangle4" (rect 21 395 105 407)(font "Arial" ))
+		(line (pt 0 400)(pt 16 400))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "InsideRectangle5" (rect 0 0 84 12)(font "Arial" ))
+		(text "InsideRectangle5" (rect 21 411 105 423)(font "Arial" ))
+		(line (pt 0 416)(pt 16 416))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "InsideRectangle6" (rect 0 0 84 12)(font "Arial" ))
+		(text "InsideRectangle6" (rect 21 427 105 439)(font "Arial" ))
+		(line (pt 0 432)(pt 16 432))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "InsideRectangle7" (rect 0 0 84 12)(font "Arial" ))
+		(text "InsideRectangle7" (rect 21 443 105 455)(font "Arial" ))
+		(line (pt 0 448)(pt 16 448))
+	)
+	(port
+		(pt 0 464)
+		(input)
+		(text "InsideRectangle8" (rect 0 0 84 12)(font "Arial" ))
+		(text "InsideRectangle8" (rect 21 459 105 471)(font "Arial" ))
+		(line (pt 0 464)(pt 16 464))
+	)
+	(port
+		(pt 0 480)
+		(input)
+		(text "InsideRectangle9" (rect 0 0 84 12)(font "Arial" ))
+		(text "InsideRectangle9" (rect 21 475 105 487)(font "Arial" ))
+		(line (pt 0 480)(pt 16 480))
+	)
+	(port
+		(pt 0 496)
+		(input)
+		(text "digit1[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "digit1[3..0]" (rect 21 491 72 503)(font "Arial" ))
+		(line (pt 0 496)(pt 16 496)(line_width 3))
+	)
+	(port
+		(pt 0 512)
+		(input)
+		(text "digit2[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "digit2[3..0]" (rect 21 507 72 519)(font "Arial" ))
+		(line (pt 0 512)(pt 16 512)(line_width 3))
+	)
+	(port
+		(pt 0 528)
+		(input)
+		(text "digit3[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "digit3[3..0]" (rect 21 523 72 535)(font "Arial" ))
+		(line (pt 0 528)(pt 16 528)(line_width 3))
+	)
+	(port
+		(pt 0 544)
+		(input)
+		(text "digit4[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "digit4[3..0]" (rect 21 539 72 551)(font "Arial" ))
+		(line (pt 0 544)(pt 16 544)(line_width 3))
+	)
+	(port
+		(pt 0 560)
+		(input)
+		(text "digit5[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "digit5[3..0]" (rect 21 555 72 567)(font "Arial" ))
+		(line (pt 0 560)(pt 16 560)(line_width 3))
+	)
+	(port
+		(pt 0 576)
+		(input)
+		(text "digit6[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "digit6[3..0]" (rect 21 571 72 583)(font "Arial" ))
+		(line (pt 0 576)(pt 16 576)(line_width 3))
+	)
+	(port
+		(pt 0 592)
+		(input)
+		(text "digit7[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "digit7[3..0]" (rect 21 587 72 599)(font "Arial" ))
+		(line (pt 0 592)(pt 16 592)(line_width 3))
+	)
+	(port
+		(pt 0 608)
+		(input)
+		(text "digit8[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "digit8[3..0]" (rect 21 603 72 615)(font "Arial" ))
+		(line (pt 0 608)(pt 16 608)(line_width 3))
+	)
+	(port
+		(pt 0 624)
+		(input)
+		(text "digit9[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "digit9[3..0]" (rect 21 619 72 631)(font "Arial" ))
+		(line (pt 0 624)(pt 16 624)(line_width 3))
+	)
+	(port
+		(pt 232 32)
+		(output)
+		(text "drawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "drawingRequest" (rect 146 27 223 39)(font "Arial" ))
+		(line (pt 232 32)(pt 216 32))
+	)
+	(port
+		(pt 232 48)
+		(output)
+		(text "RGBout[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "RGBout[7..0]" (rect 157 43 221 55)(font "Arial" ))
+		(line (pt 232 48)(pt 216 48)(line_width 3))
+	)
+	(parameter
+		"digit_color"
+		"11111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 216 640))
+	)
+	(annotation_block (parameter)(rect 24 352 232 392))
+)
+(symbol
+	(rect -600 56 -376 200)
+	(text "square_object" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst5" (rect 8 128 30 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "pixelX[10..0]" (rect 21 59 81 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "pixelY[10..0]" (rect 21 75 83 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 21 91 94 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 21 107 96 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "offsetX[10..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "offsetX[10..0]" (rect 146 27 214 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "offsetY[10..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "offsetY[10..0]" (rect 144 43 214 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "drawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "drawingRequest" (rect 138 59 215 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "RGBout[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "RGBout[7..0]" (rect 149 75 213 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(parameter
+		"OBJECT_WIDTH_X"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_HEIGHT_Y"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_COLOR"
+		"01011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect -616 -40 -361 36))
+)
+(symbol
+	(rect -1104 56 -880 200)
+	(text "square_object" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst6" (rect 8 128 30 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "pixelX[10..0]" (rect 21 59 81 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "pixelY[10..0]" (rect 21 75 83 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 21 91 94 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 21 107 96 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "offsetX[10..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "offsetX[10..0]" (rect 146 27 214 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "offsetY[10..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "offsetY[10..0]" (rect 144 43 214 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "drawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "drawingRequest" (rect 138 59 215 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "RGBout[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "RGBout[7..0]" (rect 149 75 213 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(parameter
+		"OBJECT_WIDTH_X"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_HEIGHT_Y"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_COLOR"
+		"01011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect -1136 -40 -881 36))
+)
+(symbol
+	(rect -1160 -176 -1008 -96)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst2" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"140"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -1176 -232 -1007 -194))
+)
+(symbol
+	(rect -664 568 -440 712)
+	(text "square_object" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst7" (rect 8 128 30 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "pixelX[10..0]" (rect 21 59 81 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "pixelY[10..0]" (rect 21 75 83 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 21 91 94 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 21 107 96 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "offsetX[10..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "offsetX[10..0]" (rect 146 27 214 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "offsetY[10..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "offsetY[10..0]" (rect 144 43 214 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "drawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "drawingRequest" (rect 138 59 215 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "RGBout[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "RGBout[7..0]" (rect 149 75 213 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(parameter
+		"OBJECT_WIDTH_X"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_HEIGHT_Y"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_COLOR"
+		"01011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect -680 472 -425 548))
+)
+(symbol
+	(rect -1136 584 -912 728)
+	(text "square_object" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst8" (rect 8 128 30 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "pixelX[10..0]" (rect 21 59 81 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "pixelY[10..0]" (rect 21 75 83 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 21 91 94 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 21 107 96 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "offsetX[10..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "offsetX[10..0]" (rect 146 27 214 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "offsetY[10..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "offsetY[10..0]" (rect 144 43 214 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "drawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "drawingRequest" (rect 138 59 215 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "RGBout[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "RGBout[7..0]" (rect 149 75 213 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(parameter
+		"OBJECT_WIDTH_X"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_HEIGHT_Y"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_COLOR"
+		"01011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect -1168 488 -913 564))
+)
+(symbol
+	(rect -1584 600 -1360 744)
+	(text "square_object" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst12" (rect 8 128 36 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "pixelX[10..0]" (rect 21 59 81 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "pixelY[10..0]" (rect 21 75 83 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 21 91 94 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 21 107 96 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "offsetX[10..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "offsetX[10..0]" (rect 146 27 214 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "offsetY[10..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "offsetY[10..0]" (rect 144 43 214 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "drawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "drawingRequest" (rect 138 59 215 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "RGBout[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "RGBout[7..0]" (rect 149 75 213 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(parameter
+		"OBJECT_WIDTH_X"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_HEIGHT_Y"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_COLOR"
+		"01011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect -1616 504 -1361 580))
+)
+(symbol
+	(rect -1280 344 -1128 424)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst9" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"190"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -1296 288 -1127 326))
+)
+(symbol
+	(rect -592 -176 -440 -96)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst4" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"554"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -608 -232 -439 -194))
+)
+(symbol
+	(rect -848 -184 -696 -104)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst3" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"570"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -864 -248 -695 -210))
+)
+(symbol
+	(rect -896 1016 -672 1160)
+	(text "square_object" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst14" (rect 8 128 36 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "pixelX[10..0]" (rect 21 59 81 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "pixelY[10..0]" (rect 21 75 83 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 21 91 94 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 21 107 96 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "offsetX[10..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "offsetX[10..0]" (rect 146 27 214 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "offsetY[10..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "offsetY[10..0]" (rect 144 43 214 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "drawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "drawingRequest" (rect 138 59 215 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "RGBout[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "RGBout[7..0]" (rect 149 75 213 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(parameter
+		"OBJECT_WIDTH_X"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_HEIGHT_Y"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_COLOR"
+		"01011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect -912 920 -657 996))
+)
+(symbol
+	(rect -1368 1032 -1144 1176)
+	(text "square_object" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst15" (rect 8 128 36 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "pixelX[10..0]" (rect 21 59 81 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "pixelY[10..0]" (rect 21 75 83 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 21 91 94 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 21 107 96 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "offsetX[10..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "offsetX[10..0]" (rect 146 27 214 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "offsetY[10..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "offsetY[10..0]" (rect 144 43 214 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "drawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "drawingRequest" (rect 138 59 215 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "RGBout[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "RGBout[7..0]" (rect 149 75 213 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(parameter
+		"OBJECT_WIDTH_X"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_HEIGHT_Y"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_COLOR"
+		"01011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect -1400 936 -1145 1012))
+)
+(symbol
+	(rect -912 1304 -688 1448)
+	(text "square_object" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst16" (rect 8 128 36 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "pixelX[10..0]" (rect 21 59 81 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "pixelY[10..0]" (rect 21 75 83 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 21 91 94 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 21 107 96 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "offsetX[10..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "offsetX[10..0]" (rect 146 27 214 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "offsetY[10..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "offsetY[10..0]" (rect 144 43 214 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "drawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "drawingRequest" (rect 138 59 215 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "RGBout[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "RGBout[7..0]" (rect 149 75 213 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(parameter
+		"OBJECT_WIDTH_X"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_HEIGHT_Y"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_COLOR"
+		"01011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect -928 1208 -673 1284))
+)
+(symbol
+	(rect -1384 1320 -1160 1464)
+	(text "square_object" (rect 5 0 73 12)(font "Arial" ))
+	(text "inst17" (rect 8 128 36 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "pixelX[10..0]" (rect 21 59 81 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "pixelY[10..0]" (rect 21 75 83 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "topLeftX[10..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "topLeftX[10..0]" (rect 21 91 94 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "topLeftY[10..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "topLeftY[10..0]" (rect 21 107 96 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "offsetX[10..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "offsetX[10..0]" (rect 146 27 214 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "offsetY[10..0]" (rect 0 0 70 12)(font "Arial" ))
+		(text "offsetY[10..0]" (rect 144 43 214 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 3))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "drawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "drawingRequest" (rect 138 59 215 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "RGBout[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "RGBout[7..0]" (rect 149 75 213 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(parameter
+		"OBJECT_WIDTH_X"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_HEIGHT_Y"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"OBJECT_COLOR"
+		"01011011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect -1416 1224 -1161 1300))
+)
+(symbol
+	(rect -408 304 -256 384)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst18" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"570"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -424 248 -255 286))
+)
+(symbol
+	(rect -728 312 -576 392)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst19" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"586"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -744 256 -575 294))
+)
+(symbol
+	(rect -976 328 -824 408)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst20" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"602"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -992 264 -823 302))
+)
+(symbol
+	(rect -344 1352 -192 1432)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst25" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"570"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -360 1288 -191 1326))
+)
+(symbol
+	(rect 432 1168 584 1248)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst22" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"586"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect 416 1104 585 1142))
+)
+(symbol
+	(rect 104 1208 256 1288)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst23" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"602"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect 88 1152 257 1190))
+)
+(symbol
+	(rect -152 1200 0 1280)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst24" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"618"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -168 1136 1 1174))
+)
+(symbol
+	(rect -472 1144 -320 1224)
+	(text "topLeftConst" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst21" (rect 8 64 36 81)(font "Intel Clear" ))
+	(port
+		(pt 152 32)
+		(output)
+		(text "topLeft[10..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "topLeft[10..0]" (rect 75 27 142 39)(font "Arial" ))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(parameter
+		"value"
+		"90"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 136 64))
+	)
+	(annotation_block (parameter)(rect -488 1088 -319 1126))
+)
+(symbol
+	(rect -1752 168 -1512 408)
+	(text "scoreFuelTime" (rect 5 0 76 12)(font "Arial" ))
+	(text "inst1" (rect 8 224 30 241)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "startOfFrame" (rect 0 0 67 12)(font "Arial" ))
+		(text "startOfFrame" (rect 21 59 88 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "onesec" (rect 0 0 35 12)(font "Arial" ))
+		(text "onesec" (rect 21 75 56 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "collision" (rect 0 0 38 12)(font "Arial" ))
+		(text "collision" (rect 21 91 59 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "fueltank" (rect 0 0 40 12)(font "Arial" ))
+		(text "fueltank" (rect 21 107 61 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "playerSpeed[3..0]" (rect 0 0 87 12)(font "Arial" ))
+		(text "playerSpeed[3..0]" (rect 21 123 108 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "fuelLsb[3..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "fuelLsb[3..0]" (rect 167 27 229 39)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "fuelMsb[3..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "fuelMsb[3..0]" (rect 165 43 229 55)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "scoreLLsb[4..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "scoreLLsb[4..0]" (rect 155 59 231 71)(font "Arial" ))
+		(line (pt 240 64)(pt 224 64)(line_width 3))
+	)
+	(port
+		(pt 240 80)
+		(output)
+		(text "scoreLMsb[3..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "scoreLMsb[3..0]" (rect 153 75 232 87)(font "Arial" ))
+		(line (pt 240 80)(pt 224 80)(line_width 3))
+	)
+	(port
+		(pt 240 96)
+		(output)
+		(text "scoreMLsb[3..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "scoreMLsb[3..0]" (rect 153 91 232 103)(font "Arial" ))
+		(line (pt 240 96)(pt 224 96)(line_width 3))
+	)
+	(port
+		(pt 240 112)
+		(output)
+		(text "scoreMMsb[3..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "scoreMMsb[3..0]" (rect 151 107 232 119)(font "Arial" ))
+		(line (pt 240 112)(pt 224 112)(line_width 3))
+	)
+	(port
+		(pt 240 128)
+		(output)
+		(text "speedLsb[3..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "speedLsb[3..0]" (rect 158 123 231 135)(font "Arial" ))
+		(line (pt 240 128)(pt 224 128)(line_width 3))
+	)
+	(port
+		(pt 240 144)
+		(output)
+		(text "speedMidb[3..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "speedMidb[3..0]" (rect 154 139 231 151)(font "Arial" ))
+		(line (pt 240 144)(pt 224 144)(line_width 3))
+	)
+	(port
+		(pt 240 160)
+		(output)
+		(text "speedMsb[3..0]" (rect 0 0 75 12)(font "Arial" ))
+		(text "speedMsb[3..0]" (rect 156 155 231 167)(font "Arial" ))
+		(line (pt 240 160)(pt 224 160)(line_width 3))
+	)
+	(port
+		(pt 240 176)
+		(output)
+		(text "fuel_zero" (rect 0 0 44 12)(font "Arial" ))
+		(text "fuel_zero" (rect 182 171 226 183)(font "Arial" ))
+		(line (pt 240 176)(pt 224 176))
+	)
+	(port
+		(pt 240 192)
+		(output)
+		(text "win" (rect 0 0 15 12)(font "Arial" ))
+		(text "win" (rect 207 187 222 199)(font "Arial" ))
+		(line (pt 240 192)(pt 224 192))
+	)
+	(parameter
+		"targetScore"
+		"300"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 224 224))
+	)
+	(annotation_block (parameter)(rect -1712 96 -1537 134))
+)
+(connector
+	(pt 120 424)
+	(pt 24 424)
+)
+(connector
+	(pt 120 440)
+	(pt 24 440)
+	(bus)
+)
+(connector
+	(text "pixelX[10..0]" (rect -2054 32 -1995 49)(font "Intel Clear" ))
+	(pt -2064 48)
+	(pt -1968 48)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -2062 64 -2003 81)(font "Intel Clear" ))
+	(pt -2072 80)
+	(pt -1976 80)
+	(bus)
+)
+(connector
+	(text "resetN" (rect -2042 176 -2012 193)(font "Intel Clear" ))
+	(pt -2040 192)
+	(pt -1960 192)
+)
+(connector
+	(text "startOfFrame" (rect -2064 200 -2001 217)(font "Intel Clear" ))
+	(pt -2000 216)
+	(pt -2056 216)
+)
+(connector
+	(text "playerSpeed[3..0]" (rect -2022 224 -1939 241)(font "Intel Clear" ))
+	(pt -2056 240)
+	(pt -1960 240)
+	(bus)
+)
+(connector
+	(text "onesec" (rect -2022 0 -1989 17)(font "Intel Clear" ))
+	(pt -2064 16)
+	(pt -1976 16)
+)
+(connector
+	(text "clk" (rect -1968 152 -1954 169)(font "Intel Clear" ))
+	(pt -1920 168)
+	(pt -2048 168)
+)
+(connector
+	(text "collision" (rect -2056 256 -2018 273)(font "Intel Clear" ))
+	(pt -2064 272)
+	(pt -1944 272)
+)
+(connector
+	(text "clk" (rect -226 408 -212 425)(font "Intel Clear" ))
+	(pt -208 424)
+	(pt -248 424)
+)
+(connector
+	(text "resetN" (rect -240 424 -210 441)(font "Intel Clear" ))
+	(pt -208 440)
+	(pt -248 440)
+)
+(connector
+	(text "digit1[3..0]" (rect -280 872 -231 889)(font "Intel Clear" ))
+	(pt -288 888)
+	(pt -208 888)
+	(bus)
+)
+(connector
+	(text "digit2[3..0]" (rect -280 888 -231 905)(font "Intel Clear" ))
+	(pt -288 904)
+	(pt -208 904)
+	(bus)
+)
+(connector
+	(text "digit3[3..0]" (rect -280 904 -231 921)(font "Intel Clear" ))
+	(pt -288 920)
+	(pt -208 920)
+	(bus)
+)
+(connector
+	(text "digit9[3..0]" (rect -280 1000 -231 1017)(font "Intel Clear" ))
+	(pt -288 1016)
+	(pt -208 1016)
+	(bus)
+)
+(connector
+	(text "digit8[3..0]" (rect -280 984 -231 1001)(font "Intel Clear" ))
+	(pt -288 1000)
+	(pt -208 1000)
+	(bus)
+)
+(connector
+	(text "digit7[3..0]" (rect -280 968 -231 985)(font "Intel Clear" ))
+	(pt -288 984)
+	(pt -208 984)
+	(bus)
+)
+(connector
+	(text "digit6[3..0]" (rect -280 952 -231 969)(font "Intel Clear" ))
+	(pt -288 968)
+	(pt -208 968)
+	(bus)
+)
+(connector
+	(text "digit4[3..0]" (rect -280 920 -231 937)(font "Intel Clear" ))
+	(pt -288 936)
+	(pt -208 936)
+	(bus)
+)
+(connector
+	(text "digit5[3..0]" (rect -280 936 -231 953)(font "Intel Clear" ))
+	(pt -288 952)
+	(pt -208 952)
+	(bus)
+)
+(connector
+	(text "insiderec1" (rect -312 728 -265 745)(font "Intel Clear" ))
+	(pt -208 744)
+	(pt -320 744)
+)
+(connector
+	(text "insiderec2" (rect -312 744 -265 761)(font "Intel Clear" ))
+	(pt -208 760)
+	(pt -320 760)
+)
+(connector
+	(text "offsetX1[0..10]" (rect -246 440 -177 457)(font "Intel Clear" ))
+	(pt -264 456)
+	(pt -208 456)
+	(bus)
+)
+(connector
+	(text "offsetY1[0..10]" (rect -233 456 -164 473)(font "Intel Clear" ))
+	(pt -264 472)
+	(pt -208 472)
+	(bus)
+)
+(connector
+	(text "offsetY2[0..10]" (rect -241 488 -172 505)(font "Intel Clear" ))
+	(pt -256 504)
+	(pt -208 504)
+	(bus)
+)
+(connector
+	(text "offsetX2[0..10]" (rect -246 472 -177 489)(font "Intel Clear" ))
+	(pt -256 488)
+	(pt -208 488)
+	(bus)
+)
+(connector
+	(text "fuelTank" (rect -2028 296 -1986 313)(font "Intel Clear" ))
+	(pt -2072 312)
+	(pt -1984 312)
+)
+(connector
+	(text "clk" (rect -1128 72 -1114 89)(font "Intel Clear" ))
+	(pt -1104 88)
+	(pt -1136 88)
+)
+(connector
+	(text "resetN" (rect -1128 88 -1098 105)(font "Intel Clear" ))
+	(pt -1104 104)
+	(pt -1136 104)
+)
+(connector
+	(text "pixelX[10..0]" (rect -1160 104 -1101 121)(font "Intel Clear" ))
+	(pt -1104 120)
+	(pt -1168 120)
+	(bus)
+)
+(connector
+	(text "insiderec2" (rect -846 104 -799 121)(font "Intel Clear" ))
+	(pt -880 120)
+	(pt -824 120)
+)
+(connector
+	(text "offsetX2[0..10]" (rect -862 72 -793 89)(font "Intel Clear" ))
+	(pt -880 88)
+	(pt -824 88)
+	(bus)
+)
+(connector
+	(text "offsetY2[0..10]" (rect -857 88 -788 105)(font "Intel Clear" ))
+	(pt -880 104)
+	(pt -824 104)
+	(bus)
+)
+(connector
+	(text "clk" (rect -624 72 -610 89)(font "Intel Clear" ))
+	(pt -600 88)
+	(pt -632 88)
+)
+(connector
+	(text "resetN" (rect -624 88 -594 105)(font "Intel Clear" ))
+	(pt -600 104)
+	(pt -632 104)
+)
+(connector
+	(text "pixelX[10..0]" (rect -656 104 -597 121)(font "Intel Clear" ))
+	(pt -600 120)
+	(pt -664 120)
+	(bus)
+)
+(connector
+	(text "offsetX1[0..10]" (rect -358 72 -289 89)(font "Intel Clear" ))
+	(pt -376 88)
+	(pt -320 88)
+	(bus)
+)
+(connector
+	(text "offsetY1[0..10]" (rect -345 88 -276 105)(font "Intel Clear" ))
+	(pt -376 104)
+	(pt -320 104)
+	(bus)
+)
+(connector
+	(text "insiderec1" (rect -342 104 -295 121)(font "Intel Clear" ))
+	(pt -376 120)
+	(pt -320 120)
+)
+(connector
+	(text "XvalueFuel2[10..0]" (rect -688 -176 -598 -159)(font "Intel Clear" ))
+	(pt -640 -152)
+	(pt -696 -152)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -664 120 -605 137)(font "Intel Clear" ))
+	(pt -672 136)
+	(pt -600 136)
+	(bus)
+)
+(connector
+	(text "XvalueFuel2[10..0]" (rect -672 136 -582 153)(font "Intel Clear" ))
+	(pt -728 152)
+	(pt -600 152)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -1168 120 -1109 137)(font "Intel Clear" ))
+	(pt -1176 136)
+	(pt -1104 136)
+	(bus)
+)
+(connector
+	(text "XvalueFuel1[10..0]" (rect -1168 136 -1078 153)(font "Intel Clear" ))
+	(pt -1224 152)
+	(pt -1104 152)
+	(bus)
+)
+(connector
+	(text "XvalueFuel1[10..0]" (rect -384 -160 -294 -143)(font "Intel Clear" ))
+	(pt -440 -144)
+	(pt -312 -144)
+	(bus)
+)
+(connector
+	(text "clk" (rect -688 584 -674 601)(font "Intel Clear" ))
+	(pt -664 600)
+	(pt -696 600)
+)
+(connector
+	(text "resetN" (rect -688 600 -658 617)(font "Intel Clear" ))
+	(pt -664 616)
+	(pt -696 616)
+)
+(connector
+	(text "pixelX[10..0]" (rect -720 616 -661 633)(font "Intel Clear" ))
+	(pt -664 632)
+	(pt -728 632)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -728 632 -669 649)(font "Intel Clear" ))
+	(pt -736 648)
+	(pt -664 648)
+	(bus)
+)
+(connector
+	(text "clk" (rect -1160 600 -1146 617)(font "Intel Clear" ))
+	(pt -1136 616)
+	(pt -1168 616)
+)
+(connector
+	(text "resetN" (rect -1160 616 -1130 633)(font "Intel Clear" ))
+	(pt -1136 632)
+	(pt -1168 632)
+)
+(connector
+	(text "pixelX[10..0]" (rect -1192 632 -1133 649)(font "Intel Clear" ))
+	(pt -1136 648)
+	(pt -1200 648)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -1200 648 -1141 665)(font "Intel Clear" ))
+	(pt -1208 664)
+	(pt -1136 664)
+	(bus)
+)
+(connector
+	(text "offsetX7[0..10]" (rect -422 584 -353 601)(font "Intel Clear" ))
+	(pt -440 600)
+	(pt -384 600)
+	(bus)
+)
+(connector
+	(text "offsetY7[0..10]" (rect -409 600 -340 617)(font "Intel Clear" ))
+	(pt -440 616)
+	(pt -384 616)
+	(bus)
+)
+(connector
+	(text "insiderec7" (rect -406 616 -359 633)(font "Intel Clear" ))
+	(pt -440 632)
+	(pt -384 632)
+)
+(connector
+	(text "offsetX8[0..10]" (rect -894 600 -825 617)(font "Intel Clear" ))
+	(pt -912 616)
+	(pt -856 616)
+	(bus)
+)
+(connector
+	(text "offsetY8[0..10]" (rect -897 616 -828 633)(font "Intel Clear" ))
+	(pt -912 632)
+	(pt -864 632)
+	(bus)
+)
+(connector
+	(text "insiderec8" (rect -878 624 -831 641)(font "Intel Clear" ))
+	(pt -912 648)
+	(pt -856 648)
+)
+(connector
+	(text "XvalueFuel7[10..0]" (rect -736 648 -646 665)(font "Intel Clear" ))
+	(pt -792 664)
+	(pt -664 664)
+	(bus)
+)
+(connector
+	(text "XvalueFuel8[10..0]" (rect -1200 664 -1110 681)(font "Intel Clear" ))
+	(pt -1256 680)
+	(pt -1136 680)
+	(bus)
+)
+(connector
+	(text "insiderec7" (rect -312 824 -265 841)(font "Intel Clear" ))
+	(pt -208 840)
+	(pt -320 840)
+)
+(connector
+	(text "insiderec8" (rect -312 840 -265 857)(font "Intel Clear" ))
+	(pt -208 856)
+	(pt -320 856)
+)
+(connector
+	(text "insiderec9" (rect -312 856 -265 873)(font "Intel Clear" ))
+	(pt -208 872)
+	(pt -320 872)
+)
+(connector
+	(text "offsetX8[0..10]" (rect -246 664 -177 681)(font "Intel Clear" ))
+	(pt -264 680)
+	(pt -208 680)
+	(bus)
+)
+(connector
+	(text "offsetY8[0..10]" (rect -233 680 -164 697)(font "Intel Clear" ))
+	(pt -264 696)
+	(pt -208 696)
+	(bus)
+)
+(connector
+	(text "clk" (rect -1608 616 -1594 633)(font "Intel Clear" ))
+	(pt -1584 632)
+	(pt -1616 632)
+)
+(connector
+	(text "resetN" (rect -1608 632 -1578 649)(font "Intel Clear" ))
+	(pt -1584 648)
+	(pt -1616 648)
+)
+(connector
+	(text "pixelX[10..0]" (rect -1640 648 -1581 665)(font "Intel Clear" ))
+	(pt -1584 664)
+	(pt -1648 664)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -1648 664 -1589 681)(font "Intel Clear" ))
+	(pt -1656 680)
+	(pt -1584 680)
+	(bus)
+)
+(connector
+	(text "XvalueFuel9[10..0]" (rect -1648 680 -1558 697)(font "Intel Clear" ))
+	(pt -1704 696)
+	(pt -1584 696)
+	(bus)
+)
+(connector
+	(text "offsetX9[0..10]" (rect -1342 616 -1273 633)(font "Intel Clear" ))
+	(pt -1360 632)
+	(pt -1304 632)
+	(bus)
+)
+(connector
+	(text "offsetY9[0..10]" (rect -1337 632 -1268 649)(font "Intel Clear" ))
+	(pt -1360 648)
+	(pt -1304 648)
+	(bus)
+)
+(connector
+	(text "insiderec9" (rect -1326 648 -1279 665)(font "Intel Clear" ))
+	(pt -1360 664)
+	(pt -1304 664)
+)
+(connector
+	(text "YvalueFuel1[10..0]" (rect -1260 680 -1170 697)(font "Intel Clear" ))
+	(pt -1136 696)
+	(pt -1288 696)
+	(bus)
+)
+(connector
+	(text "YvalueFuel1[10..0]" (rect -1692 696 -1602 713)(font "Intel Clear" ))
+	(pt -1584 712)
+	(pt -1712 712)
+	(bus)
+)
+(connector
+	(text "YvalueFuel1[10..0]" (rect -788 664 -698 681)(font "Intel Clear" ))
+	(pt -664 680)
+	(pt -808 680)
+	(bus)
+)
+(connector
+	(text "YvalueFuel1[10..0]" (rect -1116 352 -1026 369)(font "Intel Clear" ))
+	(pt -1128 376)
+	(pt -1088 376)
+	(bus)
+)
+(connector
+	(text "offsetY7[0..10]" (rect -241 648 -172 665)(font "Intel Clear" ))
+	(pt -256 664)
+	(pt -208 664)
+	(bus)
+)
+(connector
+	(text "offsetX9[0..10]" (rect -246 696 -177 713)(font "Intel Clear" ))
+	(pt -256 712)
+	(pt -208 712)
+	(bus)
+)
+(connector
+	(text "offsetY9[0..10]" (rect -257 712 -188 729)(font "Intel Clear" ))
+	(pt -208 728)
+	(pt -272 728)
+	(bus)
+)
+(connector
+	(text "clk" (rect -920 1032 -906 1049)(font "Intel Clear" ))
+	(pt -896 1048)
+	(pt -928 1048)
+)
+(connector
+	(text "resetN" (rect -920 1048 -890 1065)(font "Intel Clear" ))
+	(pt -896 1064)
+	(pt -928 1064)
+)
+(connector
+	(text "pixelX[10..0]" (rect -952 1064 -893 1081)(font "Intel Clear" ))
+	(pt -896 1080)
+	(pt -960 1080)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -960 1080 -901 1097)(font "Intel Clear" ))
+	(pt -968 1096)
+	(pt -896 1096)
+	(bus)
+)
+(connector
+	(text "clk" (rect -1392 1048 -1378 1065)(font "Intel Clear" ))
+	(pt -1368 1064)
+	(pt -1400 1064)
+)
+(connector
+	(text "resetN" (rect -1392 1064 -1362 1081)(font "Intel Clear" ))
+	(pt -1368 1080)
+	(pt -1400 1080)
+)
+(connector
+	(text "pixelX[10..0]" (rect -1424 1080 -1365 1097)(font "Intel Clear" ))
+	(pt -1368 1096)
+	(pt -1432 1096)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -1432 1096 -1373 1113)(font "Intel Clear" ))
+	(pt -1440 1112)
+	(pt -1368 1112)
+	(bus)
+)
+(connector
+	(text "clk" (rect -936 1320 -922 1337)(font "Intel Clear" ))
+	(pt -912 1336)
+	(pt -944 1336)
+)
+(connector
+	(text "resetN" (rect -936 1336 -906 1353)(font "Intel Clear" ))
+	(pt -912 1352)
+	(pt -944 1352)
+)
+(connector
+	(text "pixelX[10..0]" (rect -968 1352 -909 1369)(font "Intel Clear" ))
+	(pt -912 1368)
+	(pt -976 1368)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -976 1368 -917 1385)(font "Intel Clear" ))
+	(pt -984 1384)
+	(pt -912 1384)
+	(bus)
+)
+(connector
+	(text "clk" (rect -1408 1336 -1394 1353)(font "Intel Clear" ))
+	(pt -1384 1352)
+	(pt -1416 1352)
+)
+(connector
+	(text "resetN" (rect -1408 1352 -1378 1369)(font "Intel Clear" ))
+	(pt -1384 1368)
+	(pt -1416 1368)
+)
+(connector
+	(text "pixelX[10..0]" (rect -1440 1368 -1381 1385)(font "Intel Clear" ))
+	(pt -1384 1384)
+	(pt -1448 1384)
+	(bus)
+)
+(connector
+	(text "pixelY[10..0]" (rect -1448 1384 -1389 1401)(font "Intel Clear" ))
+	(pt -1456 1400)
+	(pt -1384 1400)
+	(bus)
+)
+(connector
+	(text "XvalueFuel4[10..0]" (rect -1432 1112 -1342 1129)(font "Intel Clear" ))
+	(pt -1488 1128)
+	(pt -1368 1128)
+	(bus)
+)
+(connector
+	(text "YvalueFuel2[10..0]" (rect -1492 1128 -1402 1145)(font "Intel Clear" ))
+	(pt -1368 1144)
+	(pt -1520 1144)
+	(bus)
+)
+(connector
+	(text "offsetX4[0..10]" (rect -1126 1048 -1057 1065)(font "Intel Clear" ))
+	(pt -1144 1064)
+	(pt -1088 1064)
+	(bus)
+)
+(connector
+	(text "offsetY4[0..10]" (rect -1129 1064 -1060 1081)(font "Intel Clear" ))
+	(pt -1144 1080)
+	(pt -1096 1080)
+	(bus)
+)
+(connector
+	(text "insiderec4" (rect -1110 1072 -1063 1089)(font "Intel Clear" ))
+	(pt -1144 1096)
+	(pt -1088 1096)
+)
+(connector
+	(text "offsetX5[0..10]" (rect -654 1032 -585 1049)(font "Intel Clear" ))
+	(pt -672 1048)
+	(pt -616 1048)
+	(bus)
+)
+(connector
+	(text "offsetY5[0..10]" (rect -641 1048 -572 1065)(font "Intel Clear" ))
+	(pt -672 1064)
+	(pt -616 1064)
+	(bus)
+)
+(connector
+	(text "insiderec5" (rect -638 1064 -591 1081)(font "Intel Clear" ))
+	(pt -672 1080)
+	(pt -616 1080)
+)
+(connector
+	(text "YvalueFuel2[10..0]" (rect -1020 1112 -930 1129)(font "Intel Clear" ))
+	(pt -896 1128)
+	(pt -1040 1128)
+	(bus)
+)
+(connector
+	(text "XvalueFuel5[10..0]" (rect -968 1096 -878 1113)(font "Intel Clear" ))
+	(pt -1024 1112)
+	(pt -896 1112)
+	(bus)
+)
+(connector
+	(text "XvalueFuel6[10..0]" (rect -160 1352 -70 1369)(font "Intel Clear" ))
+	(pt -192 1384)
+	(pt -64 1384)
+	(bus)
+)
+(connector
+	(text "XvalueFuel5[10..0]" (rect 640 1184 730 1201)(font "Intel Clear" ))
+	(pt 584 1200)
+	(pt 712 1200)
+	(bus)
+)
+(connector
+	(text "XvalueFuel4[10..0]" (rect 288 1208 378 1225)(font "Intel Clear" ))
+	(pt 256 1240)
+	(pt 384 1240)
+	(bus)
+)
+(connector
+	(text "XvalueFuel3[10..0]" (rect 8 1208 98 1225)(font "Intel Clear" ))
+	(pt 56 1232)
+	(pt 0 1232)
+	(bus)
+)
+(connector
+	(text "offsetX3[0..10]" (rect -1142 1336 -1073 1353)(font "Intel Clear" ))
+	(pt -1160 1352)
+	(pt -1104 1352)
+	(bus)
+)
+(connector
+	(text "insiderec3" (rect -1126 1360 -1079 1377)(font "Intel Clear" ))
+	(pt -1160 1384)
+	(pt -1104 1384)
+)
+(connector
+	(text "offsetY3[0..10]" (rect -1145 1352 -1076 1369)(font "Intel Clear" ))
+	(pt -1160 1368)
+	(pt -1112 1368)
+	(bus)
+)
+(connector
+	(text "YvalueFuel2[10..0]" (rect -1508 1416 -1418 1433)(font "Intel Clear" ))
+	(pt -1384 1432)
+	(pt -1536 1432)
+	(bus)
+)
+(connector
+	(text "XvalueFuel3[10..0]" (rect -1448 1400 -1358 1417)(font "Intel Clear" ))
+	(pt -1504 1416)
+	(pt -1384 1416)
+	(bus)
+)
+(connector
+	(text "offsetX6[0..10]" (rect -670 1320 -601 1337)(font "Intel Clear" ))
+	(pt -688 1336)
+	(pt -632 1336)
+	(bus)
+)
+(connector
+	(text "offsetY6[0..10]" (rect -657 1336 -588 1353)(font "Intel Clear" ))
+	(pt -688 1352)
+	(pt -632 1352)
+	(bus)
+)
+(connector
+	(text "insiderec6" (rect -670 1352 -623 1369)(font "Intel Clear" ))
+	(pt -688 1368)
+	(pt -640 1368)
+)
+(connector
+	(text "YvalueFuel2[10..0]" (rect -1036 1400 -946 1417)(font "Intel Clear" ))
+	(pt -912 1416)
+	(pt -1056 1416)
+	(bus)
+)
+(connector
+	(text "XvalueFuel6[10..0]" (rect -1000 1384 -910 1401)(font "Intel Clear" ))
+	(pt -1040 1400)
+	(pt -912 1400)
+	(bus)
+)
+(connector
+	(text "insiderec6" (rect -328 808 -281 825)(font "Intel Clear" ))
+	(pt -208 824)
+	(pt -336 824)
+)
+(connector
+	(text "insiderec5" (rect -312 792 -265 809)(font "Intel Clear" ))
+	(pt -208 808)
+	(pt -320 808)
+)
+(connector
+	(text "insiderec4" (rect -328 776 -281 793)(font "Intel Clear" ))
+	(pt -208 792)
+	(pt -336 792)
+)
+(connector
+	(text "insiderec3" (rect -320 760 -273 777)(font "Intel Clear" ))
+	(pt -208 776)
+	(pt -328 776)
+)
+(connector
+	(text "offsetX3[0..10]" (rect -246 504 -177 521)(font "Intel Clear" ))
+	(pt -256 520)
+	(pt -208 520)
+	(bus)
+)
+(connector
+	(text "offsetY3[0..10]" (rect -241 520 -172 537)(font "Intel Clear" ))
+	(pt -256 536)
+	(pt -208 536)
+	(bus)
+)
+(connector
+	(text "offsetX4[0..10]" (rect -254 536 -185 553)(font "Intel Clear" ))
+	(pt -208 552)
+	(pt -264 552)
+	(bus)
+)
+(connector
+	(text "offsetY4[0..10]" (rect -241 552 -172 569)(font "Intel Clear" ))
+	(pt -256 568)
+	(pt -208 568)
+	(bus)
+)
+(connector
+	(text "offsetX5[0..10]" (rect -246 568 -177 585)(font "Intel Clear" ))
+	(pt -264 584)
+	(pt -208 584)
+	(bus)
+)
+(connector
+	(text "offsetY5[0..10]" (rect -233 584 -164 601)(font "Intel Clear" ))
+	(pt -264 600)
+	(pt -208 600)
+	(bus)
+)
+(connector
+	(text "offsetX6[0..10]" (rect -246 600 -177 617)(font "Intel Clear" ))
+	(pt -256 616)
+	(pt -208 616)
+	(bus)
+)
+(connector
+	(text "offsetY6[0..10]" (rect -257 616 -188 633)(font "Intel Clear" ))
+	(pt -208 632)
+	(pt -272 632)
+	(bus)
+)
+(connector
+	(text "offsetX7[0..10]" (rect -270 632 -201 649)(font "Intel Clear" ))
+	(pt -208 648)
+	(pt -280 648)
+	(bus)
+)
+(connector
+	(text "XvalueFuel7[10..0]" (rect -824 336 -734 353)(font "Intel Clear" ))
+	(pt -824 360)
+	(pt -776 360)
+	(bus)
+)
+(connector
+	(text "XvalueFuel8[10..0]" (rect -544 312 -454 329)(font "Intel Clear" ))
+	(pt -576 344)
+	(pt -448 344)
+	(bus)
+)
+(connector
+	(text "XvalueFuel9[10..0]" (rect -200 320 -110 337)(font "Intel Clear" ))
+	(pt -256 336)
+	(pt -128 336)
+	(bus)
+)
+(connector
+	(text "YvalueFuel2[10..0]" (rect -308 1152 -218 1169)(font "Intel Clear" ))
+	(pt -320 1176)
+	(pt -280 1176)
+	(bus)
+)
+(connector
+	(text "YvalueFuel3[10..0]" (rect -1012 -176 -922 -159)(font "Intel Clear" ))
+	(pt -1008 -144)
+	(pt -968 -144)
+	(bus)
+)
+(connector
+	(text "YvalueFuel3[10..0]" (rect -1220 152 -1130 169)(font "Intel Clear" ))
+	(pt -1104 168)
+	(pt -1240 168)
+	(bus)
+)
+(connector
+	(text "YvalueFuel3[10..0]" (rect -716 152 -626 169)(font "Intel Clear" ))
+	(pt -600 168)
+	(pt -736 168)
+	(bus)
+)
+(connector
+	(text "collision" (rect -1808 248 -1770 265)(font "Intel Clear" ))
+	(pt -1816 264)
+	(pt -1752 264)
+)
+(connector
+	(text "fuelTank" (rect -1808 264 -1766 281)(font "Intel Clear" ))
+	(pt -1816 280)
+	(pt -1752 280)
+)
+(connector
+	(text "playerSpeed[3..0]" (rect -1800 280 -1717 297)(font "Intel Clear" ))
+	(pt -1808 296)
+	(pt -1752 296)
+	(bus)
+)
+(connector
+	(text "clk" (rect -1808 184 -1794 201)(font "Intel Clear" ))
+	(pt -1848 200)
+	(pt -1752 200)
+)
+(connector
+	(text "resetN" (rect -1808 200 -1778 217)(font "Intel Clear" ))
+	(pt -1816 216)
+	(pt -1752 216)
+)
+(connector
+	(text "startOfFrame" (rect -1808 216 -1745 233)(font "Intel Clear" ))
+	(pt -1816 232)
+	(pt -1752 232)
+)
+(connector
+	(text "onesec" (rect -1808 232 -1775 249)(font "Intel Clear" ))
+	(pt -1816 248)
+	(pt -1752 248)
+)
+(connector
+	(text "digit1[3..0]" (rect -1504 184 -1455 201)(font "Intel Clear" ))
+	(pt -1512 200)
+	(pt -1432 200)
+	(bus)
+)
+(connector
+	(text "digit2[3..0]" (rect -1504 200 -1455 217)(font "Intel Clear" ))
+	(pt -1512 216)
+	(pt -1432 216)
+	(bus)
+)
+(connector
+	(text "digit3[4..0]" (rect -1504 216 -1455 233)(font "Intel Clear" ))
+	(pt -1512 232)
+	(pt -1432 232)
+	(bus)
+)
+(connector
+	(text "digit4[3..0]" (rect -1504 232 -1455 249)(font "Intel Clear" ))
+	(pt -1512 248)
+	(pt -1432 248)
+	(bus)
+)
+(connector
+	(text "digit5[3..0]" (rect -1504 248 -1455 265)(font "Intel Clear" ))
+	(pt -1512 264)
+	(pt -1432 264)
+	(bus)
+)
+(connector
+	(text "digit6[3..0]" (rect -1504 264 -1455 281)(font "Intel Clear" ))
+	(pt -1512 280)
+	(pt -1432 280)
+	(bus)
+)
+(connector
+	(text "digit7[3..0]" (rect -1504 280 -1455 297)(font "Intel Clear" ))
+	(pt -1512 296)
+	(pt -1432 296)
+	(bus)
+)
+(connector
+	(text "digit8[3..0]" (rect -1504 296 -1455 313)(font "Intel Clear" ))
+	(pt -1512 312)
+	(pt -1432 312)
+	(bus)
+)
+(connector
+	(text "digit9[3..0]" (rect -1504 312 -1455 329)(font "Intel Clear" ))
+	(pt -1512 328)
+	(pt -1432 328)
+	(bus)
+)
+(connector
+	(pt -1512 360)
+	(pt -1472 360)
+)
+(connector
+	(pt -1512 344)
+	(pt -1472 344)
+)
+(text "// (c) Technion IIT, Department of Electrical Engineering 2023" (rect -1920 -256 -1561 -237)(font "Intel Clear" (font_size 8)))
